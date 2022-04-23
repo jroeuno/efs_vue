@@ -1,7 +1,7 @@
   /* eslint-disable */
   import axios from 'axios';
   //const API_URL = 'http://jroeuno.pythonanywhere.com/';
-  const API_URL = 'http://jroeuno.pythonanywhere.com/';
+  const API_URL = 'http://jroeuno.pythonanywhere.com';
   
   export class APIService {
     constructor() {
