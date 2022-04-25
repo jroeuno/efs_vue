@@ -122,7 +122,7 @@
       const url = `${API_URL}/api/stocks/`;
       let jwtToken = localStorage.getItem('token');
       const headers = {Authorization: `jwt ${jwtToken}`};
-      return axios.post(url, investment, {headers: headers});
+      return axios.post(url, stock, {headers: headers});
      }
      
      
@@ -131,7 +131,7 @@
        const url = `${API_URL}/api/stock/${stock.pk}`;
        let jwtToken = localStorage.getItem('token');
        const headers = {Authorization: `jwt ${jwtToken}`};
-       return axios.put(url, investment, {headers: headers});
+       return axios.put(url, stock, {headers: headers});
      }
      
      
