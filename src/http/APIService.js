@@ -69,11 +69,11 @@
      
      
      
-       addNewInvestment(investment){
-      const url = `${API_URL}/api/investments/`;
-      let jwtToken = localStorage.getItem('token');
-      const headers = {Authorization: `jwt ${jwtToken}`};
-      return axios.post(url, investment, {headers: headers});
+      addNewInvestment(investment){
+        const url = `${API_URL}/api/investments/`;
+        let jwtToken = localStorage.getItem('token');
+        const headers = {Authorization: `jwt ${jwtToken}`};
+        return axios.post(url, investment, {headers: headers});
      }
      
      
@@ -111,32 +111,29 @@
           console.log(":::jwtToken:::::" + jwtToken);
           const headers = {Authorization: `jwt ${jwtToken}`};
           return axios.get(url, {headers: headers});
-     
-     
-     
       }
      
      
      
-       addNewStock(stock){
-      const url = `${API_URL}/api/stocks/`;
-      let jwtToken = localStorage.getItem('token');
-      const headers = {Authorization: `jwt ${jwtToken}`};
-      return axios.post(url, stock, {headers: headers});
+      addNewStock(stock){
+        const url = `${API_URL}/api/stocks/`;
+        let jwtToken = localStorage.getItem('token');
+        const headers = {Authorization: `jwt ${jwtToken}`};
+        return axios.post(url, stock, {headers: headers});
      }
      
      
      
-     updateStock(stock){
-       const url = `${API_URL}/api/stocks/${stock.pk}`;
-       let jwtToken = localStorage.getItem('token');
-       const headers = {Authorization: `jwt ${jwtToken}`};
-       return axios.put(url, stock, {headers: headers});
+      updateStock(stock){
+        const url = `${API_URL}/api/stocks/${stock.pk}`;
+        let jwtToken = localStorage.getItem('token');
+        const headers = {Authorization: `jwt ${jwtToken}`};
+        return axios.put(url, stock, {headers: headers});
      }
      
      
      
-     deleteStock(stock_Pk){
+      deleteStock(stock_Pk){
         const url = `${API_URL}/api/stocks/${stock_Pk}`;
         let jwtToken = localStorage.getItem('token');
         const headers = {Authorization: `jwt ${jwtToken}`};
