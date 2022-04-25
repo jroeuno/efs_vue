@@ -128,7 +128,7 @@
      
      
      updateStock(stock){
-       const url = `${API_URL}/api/stock/${stock.pk}`;
+       const url = `${API_URL}/api/stocks/${stock.pk}`;
        let jwtToken = localStorage.getItem('token');
        const headers = {Authorization: `jwt ${jwtToken}`};
        return axios.put(url, stock, {headers: headers});
